@@ -43,8 +43,8 @@ percent_output_ctrl = ctrl.ControlSystem([rule1,
 
 percent_output_calcul = ctrl.ControlSystemSimulation(percent_output_ctrl)
 
-percent_output_calcul.input['error'] = float(input("Saisir degree : "))
-percent_output_calcul.input['error_dot'] = float(input("Saisir type : "))
+percent_output_calcul.input['error'] = float(input("Saisir error : "))
+percent_output_calcul.input['error_dot'] = float(input("Saisir error_dot : "))
 
 percent_output_calcul.compute()
 
